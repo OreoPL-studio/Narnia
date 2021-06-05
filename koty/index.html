@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koty</title>
+</head>
+
+<body>
+    <script>
+        const request = new XMLHttpRequest;
+        request.open("GET", "https://api.thecatapi.com/v1/breeds")
+        request.onload = function () {
+            const response = this.responseText
+            const obiekt = JSON.parse(response)
+            for (let i of obiekt) {
+                div = document.createElement("div")
+                document.body.appendChild(div)
+                let h1 = document.createElement("h1")
+                let h3 = document.createElement("h3")
+                let img = document.createElement("img")
+                h1.innerText = i.name
+                h3.innerText = i.description
+                img.src = i.image.url
+                div.appendChild(h1)
+                div.appendChild(h3)
+                div.appendChild(img)
+                console.log(i)
+            }
+        }
+        request.send()
+    </script>
+</body>
+
+</html>
