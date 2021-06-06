@@ -10,7 +10,7 @@
 
 <body>
     <script>
-        const request = new XMLHttpRequest
+        const request = new XMLHttpRequest()
         request.open("GET", "http://shibe.online/api/shibes?count=100&urls=true&httpsUrls=true")
         request.onload = function () {
             const response = this.responseText

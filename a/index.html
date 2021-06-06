@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        const request = new XMLHttpRequest
+        const request = new XMLHttpRequest()
         request.open("GET", "https://kitsu.io/api/edge//anime?filter[text]={twoje-ulubione-anime}")
         request.onload = function() {
         const response = this.response

@@ -10,7 +10,7 @@
 
 <body>
     <script>
-        const request = new XMLHttpRequest;
+        const request = new XMLHttpRequest()
         request.open("GET", "https://api.thecatapi.com/v1/breeds")
         request.onload = function () {
             const response = this.responseText
