@@ -1,8 +1,48 @@
-body{
-    background-color:black;
-    filter:invert(1);
+html,body{
+    background-color:rgba(194, 194, 194, 0.836);
+    margin: 0;
+    padding: 0;
 }
 
-img{
-    filter:invert(0);
+.ul{
+    margin: 0;
+    display: flex;
+    background-color: silver;
+    list-style-type: none;
+    text-align: center;
 }
+
+.ul li{
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.zdjecia{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10vw 0 0;
+    margin-top: 5vmin;
+}
+
+.zdj_pawla{
+    animation: krecenie_pawla 10s cubic-bezier(0, 3.76, 1, 1) infinite;
+}
+
+
+@keyframes krecenie_pawla{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+

@@ -1,0 +1,30 @@
+body{
+    background-color:rgba(194, 194, 194, 0.836);
+    
+}
+
+.lista{
+    display: flex;
+    padding-left: 20px;
+    font-size: 70px;
+    font-style: bold;
+}
+
+.lista a{
+    text-decoration: none;
+    color: black;
+
+    
+}
+
+.fas.fa-home{
+    font-size: 25vmin;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 5vmin;
+}
+
+.ikonka{
+    color: black;
+}
