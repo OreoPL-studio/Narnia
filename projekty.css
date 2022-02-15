@@ -1,20 +1,29 @@
 body{
     background-color:rgba(194, 194, 194, 0.836);
-    
+
 }
 
 .lista{
     display: flex;
-    padding-left: 20px;
-    font-size: 70px;
+    padding-left: 5vmin;
+    font-size: 7vmin;
     font-style: bold;
 }
 
 .lista a{
     text-decoration: none;
     color: black;
+}
 
-    
+.coming_soon{
+    padding-left: 5vmin;
+    font-size: 7vmin;
+    font-style: bold;
+}
+
+.coming_soon b{
+    font-size: 3vmin;
+    color: red;    
 }
 
 .fas.fa-home{
